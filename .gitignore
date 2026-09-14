@@ -42,3 +42,8 @@ __*
 AzuriteConfig
 # Claude/Cursor worktrees and local AI tooling
 .claude/
+
+# Demo automation secrets / local state (never commit)
+demo-automation/local/
+*.cred.txt
+cipp-service-account.cred.txt

@@ -1,0 +1,48 @@
+{
+  "tenantId": "6e389209-800c-48cc-9091-295f2fb92fb8",
+  "initialDomain": "coenework.onmicrosoft.com",
+  "defaultDomain": "coenework.onmicrosoft.com",
+  "subscriptionId": "f3873ae8-fb19-4972-bc44-21b7ceea508f",
+  "subscriptionName": "Visual Studio Enterprise Subscription - MPN",
+  "operatorUpn": "thomas@coene.work",
+  "githubOrgOrUser": "Cipje256",
+  "githubRepo": "Cipje256/CIPP",
+  "githubRepoUrl": "https://github.com/Cipje256/CIPP",
+  "localClone": "C:\\CIPP-Cipje256",
+  "localTooling": "C:\\CIPP",
+  "preferredResourceGroup": "CIPP",
+  "preferredLocation": "westeurope",
+  "preferredBaseName": "CIPPNG",
+  "serviceAccountUpn": "CIPPServiceAccount@coenework.onmicrosoft.com",
+  "serviceAccountDisplayName": "CIPP Service Account",
+  "tenantMode": "owntenant",
+  "officialContainerImage": "DOCKER|ghcr.io/cyberdrain/cipp:latest",
+  "appServiceSku": "B2",
+  "doNotTouchResourceGroups": [
+    "rg-teslamate-prod",
+    "rg-teslamate",
+    "rg-dranco-travel-poc",
+    "rg-windows",
+    "rg-linux",
+    "rg-externalid-lab",
+    "NetworkWatcherRG",
+    "DefaultResourceGroup-WEU"
+  ],
+  "doNotDeleteServicePrincipals": [
+    {
+      "displayName": "cipp3fmpr",
+      "appId": "b7bf42e7-bde1-49f8-b575-96807afe526a",
+      "reason": "Existed before CIPP PoC (2026-04-17)"
+    }
+  ],
+  "pocCreatedApps": [
+    { "displayName": "CIPP-SSO", "appId": "5f75bbe3-2938-4626-8663-5e4912cf4516" },
+    { "displayName": "CIPP-SAM", "appId": "92386ade-dede-44b6-8e87-12460482eb4d" }
+  ],
+  "notes": [
+    "Official deploy is CyberDrain cipp-deploy.json Linux container Web App — not SWA/Functions.",
+    "Deployer must be Owner on target RG for roleAssignments.",
+    "Never use GitHub account thc256v2 (billing lock).",
+    "Own Tenant Mode requires service account Global Administrator."
+  ]
+}
